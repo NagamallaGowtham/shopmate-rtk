@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container-fluid {
+    margin: 0 auto;
+    max-width: 1366px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.items .row .col-lg-4.col-12 {
+    margin-bottom: 20px;
+}
+
+.card,
+.card-img,
+.card-body-footer,
+.card-body,
+.card-footer {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent !important;
+}
+
+.card {
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid lightgrey;
+}
+.card-img {
+    margin-bottom: 10px;
+}
+.card-img img {
+    height: 300px;
+    width: 100%;
+    max-width: 360px;
+}
+.card-body-footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    font-size: 20px;
+    color: rebeccapurple;
+}
+.cart-items .row .col-12 {
+    margin-bottom: 30px;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid lightgray;
+    border-radius: 6px;
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+    }
+}
+.cartitem-img {
+    @media screen and (min-width: 992px) {
+        margin-right: 50px;
+    }
+}
+.cart-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 992px) {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+}
+.cart-item img {
+    max-width: 120px;
+    height: 100px;
+}
+.cart-item .title {
+    min-width: 300px;
+}
+
+.add-remove button,
+.single-add button {
+    background-color: #efe7e7;
+    border: 2px solid #87ceeb;
+    border-radius: 6px;
 }
